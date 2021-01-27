@@ -13,6 +13,7 @@ body{
     font-weight: 400;
     line-height: 1.7;
     box-sizing: border-box;
+    height: 400rem;
 }
 /*************
 Helper classes
@@ -143,5 +144,75 @@ nav {
 .padding-3{
     padding:0 1.4rem;
 }
-  
+
+/********
+***Hero text
+********/
+.hero-text{
+    margin-left: 16rem;
+    margin-top: 12.2rem;
+    color: #fff;
+    display: flex;
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 1;
+    &--left{
+        min-width: 35rem;
+        flex-shrink: 0;
+        
+    }
+    &--dash{
+        letter-spacing: 2.2;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline;
+            height:100%;
+            width:100%;
+            position: absolute;
+            top:0%;
+            left: 100%;
+            color: red;
+            font-size: 5rem;
+            z-index: 3;
+        }
+      
+    }
+    &--right{
+       
+      
+    }
+}
+.nav-secondary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    margin-top: 35rem;
+    color: #fff;
+    
+    cursor: pointer;
+   
+    
+    & .left span{
+        cursor: pointer;
+        margin-right: 2rem;
+        & i{
+            font-size: 2rem;
+        }
+    }
+    & .right {
+        display:flex;
+        align-items: center;
+        padding-right: 12rem;
+       
+        span i{
+            font-size: 10rem;
+            padding-left: 2rem;                        
+        }
+    }
+}
+
+
   
